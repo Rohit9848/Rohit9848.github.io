@@ -4,124 +4,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rohit Kumar Goud Gumudala - Full Stack Developer</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <header>
+
+    <!-- Header Section -->
+    <header class="bg-primary text-white text-center py-5">
         <div class="container">
             <h1>Rohit Kumar Goud Gumudala</h1>
-            <p>Cincinnati, Ohio | +1(513)250-0629 | <a href="mailto:gumudalarohit@gmail.com">gumudalarohit@gmail.com</a></p>
-            <p><a href="https://www.linkedin.com/in/rohitgumudala">LinkedIn</a> | <a href="https://github.com/rohitgumudala">GitHub</a></p>
+            <p>Cincinnati, Ohio | +1(513)250-0629 | <a href="mailto:gumudalarohit@gmail.com" class="text-white">gumudalarohit@gmail.com</a></p>
+            <p>
+                <a href="https://www.linkedin.com/in/rohitgumudala" class="text-white me-3"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/rohitgumudala" class="text-white"><i class="bi bi-github"></i> GitHub</a>
+            </p>
         </div>
     </header>
 
-    <nav>
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a href="#education">Education</a>
-            <a href="#certifications">Certifications & Skills</a>
-            <a href="#experience">Work Experience</a>
-            <a href="#projects">Academic Projects</a>
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications & Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Work Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Academic Projects</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <main class="container">
+    <!-- Main Content -->
+    <main class="container my-5">
         <section id="education">
-            <h2>Education</h2>
-            <div class="education">
-                <h3>University of Cincinnati, Cincinnati, Ohio, USA</h3>
-                <p>Master of Science in Information Technology (Jan 2023 - Present)</p>
-                <p>GPA: 4.0 | Honors: Graduate Scholar</p>
-                <h3>Jawaharlal Nehru Technological University, Hyderabad, India</h3>
-                <p>Bachelor of Technology in Computer Science Engineering (Aug 2016 - Sept 2020)</p>
+            <h2 class="text-primary mb-4">Education</h2>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">University of Cincinnati, Cincinnati, Ohio, USA</h3>
+                    <p class="card-text">Master of Science in Information Technology (Jan 2023 - Present)</p>
+                    <p class="card-text">GPA: 4.0 | Honors: Graduate Scholar</p>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">Jawaharlal Nehru Technological University, Hyderabad, India</h3>
+                    <p class="card-text">Bachelor of Technology in Computer Science Engineering (Aug 2016 - Sept 2020)</p>
+                </div>
             </div>
         </section>
 
         <section id="certifications">
-            <h2>Certifications & Skills</h2>
-            <div class="skills">
-                <h3>Certifications</h3>
-                <ul>
-                    <li>Azure Fundamentals</li>
-                    <li>MongoDB</li>
-                    <li>AWS Fundamentals</li>
-                    <li>Problem Solving and Cloud Computing</li>
-                </ul>
-                <h3>Programming</h3>
-                <ul>
-                    <li>JavaScript, TypeScript, Web Development (HTML, CSS, PHP), Python, Java, C, C++, Ruby</li>
-                </ul>
-                <h3>Frameworks</h3>
-                <ul>
-                    <li>React, Angular, SpringBoot, Django</li>
-                </ul>
-                <h3>Analysis Tools</h3>
-                <ul>
-                    <li>PowerBI, MS-Excel, ETL, Google Analytics</li>
-                </ul>
-                <h3>Databases</h3>
-                <ul>
-                    <li>MS-SQL Server (T-SQL), MySQL, PostgreSQL, Oracle (PL/SQL), NoSQL (MongoDB)</li>
-                </ul>
-                <h3>Other Skills</h3>
-                <ul>
-                    <li>jQuery, Node, Express, Docker, Kubernetes, GitHub, MS Office Suite, AWS, JIRA, Google Suite</li>
-                </ul>
+            <h2 class="text-primary mb-4">Certifications & Skills</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="h4">Certifications</h3>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item">Azure Fundamentals</li>
+                        <li class="list-group-item">MongoDB</li>
+                        <li class="list-group-item">AWS Fundamentals</li>
+                        <li class="list-group-item">Problem Solving and Cloud Computing</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="h4">Programming</h3>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item">JavaScript, TypeScript, Web Development (HTML, CSS, PHP), Python, Java, C, C++, Ruby</li>
+                    </ul>
+                    <h3 class="h4">Frameworks</h3>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item">React, Angular, SpringBoot, Django</li>
+                    </ul>
+                    <h3 class="h4">Analysis Tools</h3>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item">PowerBI, MS-Excel, ETL, Google Analytics</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="h4">Databases</h3>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item">MS-SQL Server (T-SQL), MySQL, PostgreSQL, Oracle (PL/SQL), NoSQL (MongoDB)</li>
+                    </ul>
+                    <h3 class="h4">Other Skills</h3>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item">jQuery, Node, Express, Docker, Kubernetes, GitHub, MS Office Suite, AWS, JIRA, Google Suite</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <section id="experience">
-            <h2>Work Experience</h2>
-            <div class="experience">
-                <h3>Full Stack Developer, ZeroCodeHR LLP, Florida, USA</h3>
-                <p>Jan 2024 - Present</p>
-                <ul>
-                    <li>Implemented a proactive approach to optimize concurrent hash maps execution, enhancing overall performance and efficiency under high loads.</li>
-                    <li>Implemented front-end and back-end improvements across diverse products, contributing to project success.</li>
-                </ul>
-                <h3>Graduate Research Assistant – (Software Application Developer), University of Cincinnati, Information Technology Solution Center, Ohio, USA</h3>
-                <p>Jun 2023 – Jan 2024</p>
-                <ul>
-                    <li>Enhanced mobile and web applications by seamlessly migrating them from older Angular and Node.js versions to the latest stable releases, ensuring bug-free functionality.</li>
-                    <li>Led critical improvements in multiple research projects by implementing new features with React/Node, transitioning Angular code to React, and successfully resolving issues arising from the migration process.</li>
-                    <li>Innovated new features like map clusters, customized email notifications, and template-driven PDF generation, while improving existing components.</li>
-                </ul>
-                <h3>Senior Software Engineer - (Product Owner), ZeroCodeHR LLP, Hyderabad, India</h3>
-                <p>Aug 2020 - Dec 2022</p>
-                <ul>
-                    <li>Mentored and guided multiple functional and cross-functional teams in developing robust products and implementing challenging client requirements.</li>
-                    <li>Designed and led performance optimizations, leveraging load testing, database management, and problem-solving to achieve an 80% improvement in data retrieval times.</li>
-                    <li>Identified and refactored legacy vulnerable JavaScript code impacted by newly introduced security policies, enhancing platform security, and mitigating potential risks.</li>
-                    <li>Enhanced the core platform by generalizing new requirements and developing generic reusable solutions to those requirements, resulting in improved efficiency and cost savings for multiple clients.</li>
-                    <li>Developed a versatile solution enabling automated file imports via FTP, featuring configurable and scheduled data imports/exports to ensure timely and accurate data updates.</li>
-                    <li>Built a multipurpose Notifications framework that is reusable across various products developed on the low code platform.</li>
-                </ul>
-                <h3>Product Tech Support Intern, OYO Rooms, Hyderabad, India</h3>
-                <p>Aug 2019 - July 2020</p>
-                <ul>
-                    <li>Developed APIs and spring microservices, performed root cause analysis on errors and bugs reported by business on newly released features, and assisted in release fix deployment.</li>
-                    <li>Handled ad-hoc business requests for data dumps and rapid application enhancements. Maintained and improved visual dashboards which give product insights to higher management and business leads.</li>
-                    <li>Coordinated with various internal teams including Supply Chain, Transformation, Identity, Weddingz (Event Management), and OYO Frames (Photography) to effectively debug and resolve issues.</li>
-                </ul>
+            <h2 class="text-primary mb-4">Work Experience</h2>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">Full Stack Developer, ZeroCodeHR LLP, Florida, USA</h3>
+                    <p class="card-text">Jan 2024 - Present</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Implemented a proactive approach to optimize concurrent hash maps execution, enhancing overall performance and efficiency under high loads.</li>
+                        <li class="list-group-item">Implemented front-end and back-end improvements across diverse products, contributing to project success.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">Graduate Research Assistant – (Software Application Developer), University of Cincinnati, Information Technology Solution Center, Ohio, USA</h3>
+                    <p class="card-text">Jun 2023 – Jan 2024</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Enhanced mobile and web applications by seamlessly migrating them from older Angular and Node.js versions to the latest stable releases, ensuring bug-free functionality.</li>
+                        <li class="list-group-item">Led critical improvements in multiple research projects by implementing new features with React/Node, transitioning Angular code to React, and successfully resolving issues arising from the migration process.</li>
+                        <li class="list-group-item">Innovated new features like map clusters, customized email notifications, and template-driven PDF generation, while improving existing components.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">Senior Software Engineer - (Product Owner), ZeroCodeHR LLP, Hyderabad, India</h3>
+                    <p class="card-text">Aug 2020 - Dec 2022</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Mentored and guided multiple functional and cross-functional teams in developing robust products and implementing challenging client requirements.</li>
+                        <li class="list-group-item">Designed and led performance optimizations, leveraging load testing, database management, and problem-solving to achieve an 80% improvement in data retrieval times.</li>
+                        <li class="list-group-item">Identified and refactored legacy vulnerable JavaScript code impacted by newly introduced security policies, enhancing platform security, and mitigating potential risks.</li>
+                        <li class="list-group-item">Enhanced the core platform by generalizing new requirements and developing generic reusable solutions to those requirements, resulting in improved efficiency and cost savings for multiple clients.</li>
+                        <li class="list-group-item">Developed a versatile solution enabling automated file imports via FTP, featuring configurable and scheduled data imports/exports to ensure timely and accurate data updates.</li>
+                        <li class="list-group-item">Built a multipurpose Notifications framework that is reusable across various products developed on the low code platform.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">Product Tech Support Intern, OYO Rooms, Hyderabad, India</h3>
+                    <p class="card-text">Aug 2019 - July 2020</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Developed APIs and spring microservices, performed root cause analysis on errors and bugs reported by business on newly released features, and assisted in release fix deployment.</li>
+                        <li class="list-group-item">Handled ad-hoc business requests for data dumps and rapid application enhancements, maintained and improved visual dashboards which give product insights to higher management and business leads.</li>
+                        <li class="list-group-item">Coordinated with various internal teams including Supply Chain, Transformation, Identity, Weddingz (Event Management), and OYO Frames (Photography) to effectively debug and resolve issues.</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <section id="projects">
-            <h2>Academic Projects</h2>
-            <div class="projects">
-                <h3>Cyber Breach Analysis</h3>
-                <p>Developed an application using Django and MySQL to analyze cyber-attacks from custom datasets, conducting both qualitative and quantitative assessments to yield valuable insights into cybersecurity.</p>
-                <h3>Shopping Cart</h3>
-                <p>An application with a REST API supporting CRUD operations for customers, items, carts, and vendors. Implemented MongoDB Geospatial Queries to match vendors with customer locations using GeoJSON data.</p>
-                <h3>Results Scraper</h3>
-                <p>A Web Scraping Application used to Scrap results from University Website created with Python Requests and BeautifulSoup modules.</p>
+            <h2 class="text-primary mb-4">Academic Projects</h2>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">Cyber Breach Analysis</h3>
+                    <p class="card-text">Technologies: Python, HTML, CSS, JavaScript</p>
+                    <p class="card-text">Developed an application using Django and MySQL to analyze cyber-attacks from custom datasets, conducting both qualitative and quantitative assessments to yield valuable insights into cybersecurity.</p>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">Shopping Cart</h3>
+                    <p class="card-text">Technologies: Java, SpringBoot</p>
+                    <p class="card-text">An application with a REST API supporting CRUD operations for customers, items, carts, and vendors. Implemented MongoDB Geospatial Queries to match vendors with customer locations using GeoJSON data.</p>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">Results Scraper</h3>
+                    <p class="card-text">Technologies: Python, HTML, CSS, JavaScript</p>
+                    <p class="card-text">A Web Scraping Application used to Scrap results from University Website created with Python Requests and BeautifulSoup modules.</p>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Rohit Kumar Goud Gumudala</p>
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>© 2024 Rohit Kumar Goud Gumudala. All Rights Reserved.</p>
     </footer>
 
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
