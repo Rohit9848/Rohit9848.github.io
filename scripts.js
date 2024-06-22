@@ -1,15 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log("Page loaded successfully!");
-    const navLinks = document.querySelectorAll('nav a');
-    
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
-            
-            window.scrollTo({
-                top: targetElement.offsetTop,
+
+    // Add smooth scrolling to all links in navbar
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
                 behavior: 'smooth'
             });
         });
