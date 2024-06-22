@@ -14,7 +14,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #333;
+    background-color: #4CAF50;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -26,25 +26,35 @@ header h1 {
 }
 
 header p {
-    margin: 5px 0 0;
+    margin: 5px 0;
     font-size: 1.2em;
+}
+
+header a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+header a:hover {
+    color: #ddd;
 }
 
 /* Navigation Styles */
 nav {
+    background-color: #333;
     text-align: center;
-    margin: 20px 0;
+    padding: 10px 0;
 }
 
 nav a {
-    margin: 0 15px;
+    color: #fff;
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    margin: 0 15px;
+    font-size: 1.2em;
 }
 
 nav a:hover {
-    color: #666;
+    color: #4CAF50;
 }
 
 /* Section Styles */
@@ -63,86 +73,37 @@ section p {
     line-height: 1.6;
 }
 
-/* Skills and Projects Styles */
-.skills, .projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-.skills div, .projects div {
-    flex: 1;
-    min-width: 250px;
-    margin: 10px 0;
+/* Education, Experience, and Projects Styles */
+.education, .experience, .projects {
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    margin: 20px 0;
 }
 
-.skills div ul, .projects div ul {
-    list-style-type: none;
-    padding: 0;
+.education h3, .experience h3, .projects h3 {
+    color: #4CAF50;
+    font-size: 1.5em;
 }
 
-.skills div li, .projects div li {
-    padding: 5px 0;
-    border-bottom: 1px solid #ddd;
-}
-
-.skills div li:last-child, .projects div li:last-child {
-    border: none;
-}
-
-/* Form Styles */
-form {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-form label {
-    font-weight: bold;
-}
-
-form input[type="text"],
-form input[type="email"] {
-    width: calc(100% - 20px);
-    padding: 10px;
+.education p, .experience p, .projects p {
     margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1em;
 }
 
-form input[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    font-size: 1em;
-    cursor: pointer;
-}
-
-form input[type="submit"]:hover {
-    background-color: #555;
+.experience ul, .projects ul {
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 /* Footer Styles */
 footer {
-    text-align: center;
-    padding: 20px 0;
     background-color: #333;
     color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    text-align: center;
+    padding: 20px 0;
 }
 
 footer p {
     margin: 0;
-    font-size: 1em;
 }
